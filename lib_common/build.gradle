@@ -1,4 +1,4 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.library'//功能组件 类似第三方库 始终是库
 
 android {
     compileSdkVersion build_versions.target_sdk

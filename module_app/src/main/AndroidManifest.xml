@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--发送崩溃日志界面-->
+        <!--发送崩溃日志界面   注意：没有启动页 所以组件模式下不能运行   启动页也是个组件在module_main-->
         <activity
             android:name="org.acra.CrashReportDialog"
             android:excludeFromRecents="true"
