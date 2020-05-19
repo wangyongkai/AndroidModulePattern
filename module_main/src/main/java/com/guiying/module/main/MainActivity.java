@@ -2,6 +2,7 @@ package com.guiying.module.main;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
@@ -31,6 +32,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.girls_button).setOnClickListener(this);
         findViewById(R.id.fragment_button).setOnClickListener(this);
 
+        Log.d("MainActivity", "----------------" + String.valueOf(getApplication()));
         Toast.makeText(getApplicationContext(), "------------s", Toast.LENGTH_LONG).show();
     }
 

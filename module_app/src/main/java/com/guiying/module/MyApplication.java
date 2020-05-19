@@ -40,6 +40,14 @@ import org.acra.sender.ReportSenderException;
         resDialogTitle = R.string.crash_dialog_title)
 public class MyApplication extends BaseApplication {
 
+    //------------------------------------------------------------------------------
+
+
+    //组件本质上还是studio项目中的一个module。集成模式下是com.android.library。单独运行模式是com.android.application。
+    //组件化只是让组件之间不能相互引用实现了解耦。
+    //1.组件之间通信？
+    //2.组件之间页面跳转？
+
 
     //------------------------------------------------------------------------------
 
@@ -51,7 +59,8 @@ public class MyApplication extends BaseApplication {
     //问题1：集成模式下 各个组件不能使用自己的application 什么情况下使用？集成模式下组件代码中
     // getApplicationContext获取的不应该是统一的壳工程的application呢
 
-    //如何使用全局的application 还是靠共同依赖作为中间桥梁
+    //如何使用全局的application 还是靠共同依赖作为中间桥梁。如果不用共同依赖的全局application，单独运行模式下，
+    //获取的是自己的application。集成模式下即使不用共同依赖中的全局application，getapplication获取到的也是壳工程的application==共同依赖的application。
 
 
     //------------------------------------------------------------------------------
